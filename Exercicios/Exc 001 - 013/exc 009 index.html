@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+
+ <title>Midias em HTML5</title>
+</head>
+<body>
+ <h1>Imagens dinâmicas</h1>
+ <p>Tente diminuir e aumentar a pagina.</p>
+
+ <picture>
+  <source media="(max-width: 750px)" srcset="Imagens/Foto-p.png" type="image/png">
+  <source media="(max-width: 1050px)" srcset="Imagens/Foto-m.png" type="image/png">
+  <img src="Imagens/Foto-g.png" alt="imagem flexivel">
+ </picture>
+
+ <h1>reproduzindo áudio.</h1>
+ <p>Adicionando áudios em HTML5.</p>
+ <h2>Forma 1</h2>
+ <audio src="audio.mp3" controls autoplay ></audio>
+ <h2>Forma 2</h2>
+ <audio preload="auto" controls autoplay>
+  <source src="audio.mp3" type="audio/mpeg">
+  <source src="audio.ogg" type="audio/ogg">
+  <source src="audio.wav" type="audio/wav">
+  <p>Infelismente não pode gravar o audio.</p>
+ </audio>
+</body>
+</html>
